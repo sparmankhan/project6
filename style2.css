@@ -1,0 +1,41 @@
+*{
+margin: 0;
+padding:0;
+text-decoration: none;
+}
+
+
+.service-main-area{
+    
+    background: rgb(202, 202, 202);
+}
+
+.service-padding{
+    width: 80%;
+    padding: 40px;
+}
+
+.service-wrap{
+    text-align: center;
+    
+
+}
+
+.service-wrap h3{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.service-wrap h1{
+    text-transform: uppercase;
+}
+
+hr.service-line{
+    border-bottom: 2px solid rgb(250, 18, 126);
+    width: 5%;
+    margin: 30px auto;
+}
+
+.service-icon{
+    display: flex;
+    justify-content: space-between;
+}

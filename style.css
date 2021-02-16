@@ -1,0 +1,823 @@
+* {
+    font-family: 'Merriweather Sans', sans-serif;
+
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.hero-area {
+    width: 100%;
+    height: 80vh;
+    background-image: url(./img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-padding {
+    background: linear-gradient(0deg, #ffcc99cf, #ff9999ba);
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-area {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-area h1 {
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+}
+
+
+.navbar-item ul li {
+    display: inline-block;
+    margin: 7px;
+}
+
+.navbar-item ul li a {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 800;
+    color: #fff;
+}
+
+.navbar-item ul li a:hover {
+
+    color: rgb(240, 185, 33);
+    border-bottom: 3px solid rgb(240, 185, 33);
+}
+
+.creative h3 {
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.creative h1 {
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.creative {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+hr.line {
+    width: 4%;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+}
+
+.button button {
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 30px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+}
+
+.button {
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom-list {
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+
+}
+
+.bottom-list ul {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.bottom-list ul li {
+    position: relative;
+    list-style: none;
+    width: 24%;
+}
+
+.bottom-list ul li {
+    color: #fff;
+    font-weight: 600;
+}
+
+.bottom-list ul li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    top: -15px;
+}
+
+.bottom-list ul li:before {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    display: block;
+    top: -15px;
+}
+
+.bottom-list ul li:hover:before {
+    width: 100px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    content: '';
+    height: 2px;
+    z-index: 1;
+}
+
+
+section.about-area {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.title-wrap h1 {
+    padding-bottom: 30px;
+    font-weight: 200;
+    font-size: 35px;
+    font-family: 'Tinos', serif;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.title-wrap h2 {
+    padding-bottom: 30px;
+    font-weight: 200;
+    font-size: 30px;
+    font-family: 'Tinos', serif;
+}
+
+.title-wrap h3::after {
+    content: "";
+    position: absolute;
+    left: 35%;
+    bottom: -15px;
+    width: 30%;
+    height: 2px;
+    background: rgb(241, 102, 9);
+}
+
+/* .title {
+    margin-bottom: 50px;
+} */
+
+hr.line-2 {
+    margin: 30px auto;
+    width: 5%;
+    outline: none;
+    border-bottom: 3px solid #ee5e5e;
+}
+
+
+.title-wrap p {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+
+
+
+
+
+
+
+
+
+.about-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-wrap {
+    width: 32%;
+    height: 230px;
+    position: relative;
+}
+
+.card-front-part {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.card-hover-part {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+}
+
+.card-hover-part {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #ee5e5e, #c9c20094);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.card-wrap:hover>.card-hover-part {
+    visibility: visible;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.card-hover-part h4 {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card-wrap:hover>.card-front-part {
+    box-shadow: 10px 10px 0px 0px rgba(14, 207, 255, 0.795);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.card-front-part img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+}
+
+.clint-main-wrap {
+    background-color: #95E1D3;
+    padding: 50px;
+}
+
+.clint-padding {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.clint-wrap {
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clint-wrap h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+
+.service-wrap {
+    padding-top: 80px;
+    text-align: center;
+
+}
+
+.service-wrap h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+}
+
+.service-wrap h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.line3 {
+    margin: 40px auto;
+    width: 5%;
+    outline: none;
+    border-bottom: 3px solid #ee5e5e;
+}
+
+
+.service-area {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item i {
+    color: #4bdfc4;
+    padding: 30px 20px;
+    font-size: 35px;
+}
+
+.service-item h2 {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.service-item p {
+    padding-left: 10px;
+}
+
+hr.line-normal {
+    border: -5px solid #000;
+
+}
+
+.hr {
+    padding: 60px;
+}
+
+
+.unique {
+    margin-top: 90px;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    background-image: url(./img/design.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.unique-padding {
+    padding: 60px 0;
+    background: rgba(255, 255, 255, 0.733);
+    width: 100%;
+    height: 100%;
+}
+
+.unique-wrap h3 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+hr.line-unique{
+    width: 5%;
+    margin: 0 auto;
+    border: 2px solid #ee5e5e;
+}
+
+.unique-hr{
+    padding: 40px;
+}
+
+.unique-img-item{
+    display: flex;
+    justify-content: center;
+}
+
+.unique-img1 img{
+    width: 225px;
+}
+
+.unique-img2 img{
+    left: -40px;
+    top: 165px;
+    position: relative;
+    width: 120px;
+}
+
+.service-what{
+    padding: 80px 0;
+    text-align: center;
+}
+
+.what-wrap h4{
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.what-wrap h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.what-hr{
+    padding: 40px 0;
+}
+
+.what-hr hr{
+    width: 5%;
+    margin: 0 auto;
+    border-bottom: 2px solid #ee5e5e;
+}
+
+
+.service-img-toggle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-img-toggle img{
+    width: 600px;
+}
+/* ==================================== */
+.accordion {
+    color: rgb(143, 139, 139);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+button.accordion i{
+    color: aqua;
+    align-items: center;
+    font-size: 25px;
+}
+
+/* .accordion{
+    align-items: center;
+}
+   */
+
+  .accordion:after {
+    content: '\002B';
+    color: rgb(197, 197, 197);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+    
+  .panel p{
+      padding: 10px;
+  }
+
+/* ============================================ */
+
+
+
+
+.quote-main-area{
+    background: rgb(212, 212, 212);
+}
+
+.quote-padding{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider1{
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.slider1 i {
+    border: 2px solid #4bdfc4;
+    padding: 30px;
+    font-size: 40px;
+    margin-top: 16px;
+    margin-right: 20px;
+}
+
+
+.slider-items button.owl-next {
+    position: absolute;
+    right: -50px;
+    transition: .3s;
+    bottom: 80px;
+}
+
+.slider-items button.owl-prev {
+    position: absolute;
+    left: -50px;
+    transition: .3s;
+    bottom: 80px;
+}
+
+
+hr.name{
+    border-bottom: 2px solid #ee5e5e;
+
+}
+
+
+
+
+
+
+
+
+.meet-our-padding{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.meet-our-wrap{
+    text-align: center;
+}
+
+.meet-our-wrap h3{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+
+.meet-our-wrap h1{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+
+hr.meet-our-line{
+    border-bottom: 3px solid #ee5e5e;
+    width: 5%;
+    margin: 40px auto;
+}
+
+/* ======================================== */
+
+.team-card{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.team-wrap{
+    width: 400px;
+    height: 360px;
+    display: flex;
+    padding: 2rem 1rem;
+    background: #ee5e5e;
+    position: relative;
+    align-items: flex-end;
+    
+    transition: 0.3s ease-in-out;
+}
+
+/* 
+.team-wrap:hover{
+    transform: translateY(20px);
+} */
+
+.team-wrap:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    background: linear-gradient(to bottom, rgba(255, 116, 3, 0.568), rgba(255, 251, 3, 0.719));
+    z-index: 2;
+    transition: .3s all;
+    opacity: 0;
+    box-shadow: 10px 10px 0px 0px rgba(14, 207, 255, 0.795);
+}
+
+
+.team-wrap:hover:before{
+    opacity: 1;
+}
+
+.team-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.team-wrap .team-text{
+    
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+
+.team-wrap:hover .team-text{
+    
+    left: 30%;
+    bottom: 50%;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+/* ================================ */
+.logo-icon-area{
+    margin: 30px 0;
+    padding: 30px;
+    background: rgb(235, 235, 235);
+    
+}
+
+.logo-icon-padding{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo-icon-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-icon-wrap img{
+    width: 90px;
+}
+
+
+
+
+
+
+.owl-carousel .owl-item img {
+    margin: 20px;
+    display: block;
+    width: 70px;
+}
+
+
+
+.slider1 img{
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.slider-text p {
+    width: 70%;
+    padding-left: 43px;
+}
+
+
+
+/* .arman h4::after, */
+.arman h4::before
+
+ {
+    display: inline-block;
+    content: "";
+    border-bottom: 3px solid #ee5e5e;
+    width: 4rem;
+    /* margin: 0 1rem;
+    transform: translateY(-1rem); */
+}
+
+
+/* ===================== */
+
+.happy-main-area{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    background-image: url(./img/hero2.jpg);
+}
+
+.main-color{
+    width: 100%;
+    height: 40vh;
+    background: rgba(167, 166, 166, 0.795);
+
+}
+
+.happy-padding{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.happy-wrap h1,h2{
+    text-align: center;
+}
+
+.happy-wrap h2{
+    font-weight: 200;
+    font-family: 'Kaushan Script', cursive ;
+}
+
+.happy-wrap h1{
+    padding-bottom: 50px;
+}
+
+.clients{
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+}
+
+.clients-name{
+    padding: 0 30px;
+}
+
+
+hr.clients-line{
+    width: 30%;
+    margin: 10px 1px;
+    border-bottom: 2px solid #ee5e5e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
